@@ -76,7 +76,6 @@ main {
   transform: scale(1.2);
 }
 .allEdition {
-  border: 1px solid red;
   padding: 0 1rem;
 }
 .allEdition .grid {
@@ -85,7 +84,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.2rem;
-  border: 1px solid green;
+  place-items:center;
 }
 .allEdition .grid .grid-item > a > img {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
