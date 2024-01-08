@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  /* 1rem=10px */
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #fafbfe;
+}
+/* navigation */
+header {
+  background: #ffff;
+  box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.6);
+  position: sticky;
+  top: 0;
+}
+nav {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+nav .logo > h2 {
+  font-size: 2.4rem;
+}
+nav .logo > p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+nav > ul > li > a {
+  font-size: 1.8rem;
+  color: #000;
+}
+main {
+  min-height: calc(100vh - 73px);
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.latestEdition {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-block: 10rem;
+}
+.latestEdition > div > a > img {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1.2rem;
+}
+.allEdition .grid {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.4rem;
+}
+.allEdition .grid .grid-item > a > img {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1.2rem;
+}
+footer {
+  padding: 2.2rem 1rem;
+}
+footer > p {
+  text-align: center;
+  font-size: 1rem;
+}
